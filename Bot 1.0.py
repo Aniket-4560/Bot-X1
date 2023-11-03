@@ -101,6 +101,10 @@ async def cancel_process(event):
 
     except Exception as e:
         await event.respond(f'Error: {e}')
+
+@client.on(events.NewMessage(pattern='/start'))
+async def start(event):
+    await event.respond("Bot is online!")
         
 # Run the bot
 client.run_until_disconnected()
