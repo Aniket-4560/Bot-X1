@@ -6,4 +6,4 @@ COPY . .
 RUN apt -qq update && apt upgrade -y
 RUN pip3 install telethon 
 RUN pip3 install requests 
-CMD [ "python3", "Bot 4.py" ]
+CMD [ "python3", "Bot 1.0.py" ]
