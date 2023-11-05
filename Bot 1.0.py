@@ -82,7 +82,7 @@ async def add_channel(event):
 
             # If it's not the last run, wait for the specified interval (in seconds) before next iteration
             if run < int(runs):
-                await asyncio.sleep(int(interval) * 10)  # Convert minutes to seconds
+                await asyncio.sleep(int(interval) * 60)  # Convert minutes to seconds
 
     except Exception as e:
         await event.respond(f'Error: {e}')
